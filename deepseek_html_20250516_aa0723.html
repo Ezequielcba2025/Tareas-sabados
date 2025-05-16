@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tareas del Sábado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛠️ Tareas del Sábado</h1>
+        
+        <!-- Panel para seleccionar usuario -->
+        <div class="user-panel">
+            <label>Selecciona tu nombre:</label>
+            <select id="user-select" onchange="loadTasks()">
+                <option value="">-- Elegir --</option>
+                <option value="Juan">Juan</option>
+                <option value="María">María</option>
+                <option value="Carlos">Carlos</option>
+            </select>
+        </div>
+        
+        <!-- Lista de tareas -->
+        <div id="tasks-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
